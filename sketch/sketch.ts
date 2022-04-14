@@ -1,7 +1,9 @@
+let colours = ["#052f5f","#005377","#06a77d","#d5c67a","#f1a208"]
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noLoop();
 }
+
 
 function draw() {
   background('white');
@@ -14,8 +16,8 @@ function draw() {
 }
 
 function drawCircle(c: Circle) {
-  const shade = random(50, 100);
-  fill(shade);
+
+  fill(random(colours));
   noStroke();
   circle(c.pos.x, c.pos.y, c.radius * 2);
 }
